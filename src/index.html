@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Election Results</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body
+  style="background: url(data:image/jpeg;base64,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);">
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">בחירות 2020</h1>
+        <hr />
+        <div id="loader" style="display: none;">
+          <p class="text-center">Loading...</p>
+        </div>
+
+
+        <div id="content" style="display: none;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Votes</th>
+              </tr>
+            </thead>
+            <tbody id="candidatesResults">
+            </tbody>
+          </table>
+          <hr />
+          <form id="allowVote" onSubmit="App.castVote(); return false;">
+            <div class="form-group">
+              <label for="candidatesSelect">Select Candidate</label>
+              <select class="form-control" id="candidatesSelect">
+              </select>
+            </div>
+            <button type="submit" id="vote" class="btn btn-primary" onclick="myFunction()">Vote</button>
+            <div>Time left for voting : <span id="timer"></span></div>
+          </form>
+          </button>
+          <p id="demo"></p>
+        </div>
+
+        <script>
+          function myFunction() {
+            alert("Thank you for voting!");
+          }
+        </script>
+
+        <div id="startAdmin" style="display: none;">
+          <form onSubmit="App.setElectionTimes(); return false;">
+            <div class="form-group">
+              <label for="candidatesadded">Election period and time:</label>
+              <p></p>
+              <label for="start"></label>Start time:</label>
+              <input type="datetime-local" id="start" name="bday"></input>
+              <p></p>
+              <label for="end"></label>End time:</label>
+              <input type="datetime-local" id="end" name="bday"></input>
+              <p></p>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <hr />
+          </form>
+        </div>
+
+        <div id="admin" style="display: none;">
+          <form onSubmit="App.addCandidates(); return false;">
+            <div class="form-group">
+              <label for="f"> Add candidate:</label>
+              <input type="text" class="form-control" id="fname"></input>
+            </div>
+            <button type="addCandidate" class="btn btn-primary"> Add</button>
+            <hr />
+          </form>
+
+          <form onSubmit="App.addToVotersBook(); return false;">
+            <div class="form-group">
+              <label for="candidatesadded">Add voter to voters book:</label>
+              <input type="text" class="form-control" id="addressText"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+            <hr />
+          </form>
+
+
+          <form onSubmit="App.addToBookVotesInputFile(); return false;">
+            <div class="form-group">
+              <b>Add voters to voters book from text file:</b>
+              <input type="file" id="addressFile"></input>
+            </div>
+            <button type="submit file" class="btn btn-primary">Submit</button>
+          </form>
+          <hr />
+        </div>
+
+        <div id="win" style="display: none;">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+            body {
+              background-color: black;
+              font-family: cursive;
+            }
+
+            .glow {
+              font-size: 80px;
+              color: #fff;
+              text-align: center;
+              -webkit-animation: glow 1s ease-in-out infinite alternate;
+              -moz-animation: glow 1s ease-in-out infinite alternate;
+              animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+              }
+
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+              }
+            }
+          </style>
+          </head>
+
+          <body>
+            <div>
+              <h1 class="glow">The winner is:
+                <p id="winner"></p>
+              </h1>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
